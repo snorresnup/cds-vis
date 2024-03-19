@@ -49,7 +49,7 @@ def NeuNetClassifier(reshaped_X_train, y_train, reshaped_X_test, y_test):
 
     # loss curve
     plt.plot(clf.loss_curve_)
-    plt.titel("Loss curve during training", fontsize=14)
+    plt.title("Loss curve during training", fontsize=14)
     plt.xlabel('Iterations')
     plt.ylabel('Loss score')
     # save loss curve
@@ -62,8 +62,8 @@ def NeuNetClassifier(reshaped_X_train, y_train, reshaped_X_test, y_test):
     labels = ["airplane", "automobile", "bird", "cat", "deer", "dog", "frog", "horse", "ship", "truck"]
     NeuNetReport = metrics.classification_report(y_test, y_pred, target_names = labels)
     
-    f = open('../out/classification_report_NN.txt', 'w') # open in write mode
-    f.write(NeuNetreport) # write the variable into the txt file 
+    f = open('../output/classification_report_NN.txt', 'w') # open in write mode
+    f.write(NeuNetReport) # write the variable into the txt file 
     f.close() 
 
 def main():
