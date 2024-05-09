@@ -1,3 +1,3 @@
 source ./env/bin/activate
-python script.py
+python src/script.py
 deactivate
