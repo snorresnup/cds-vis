@@ -1,7 +1,6 @@
 # Assignment 3:
-
 ### Short description:
-This assignment shows how you can train a VGG16 convolutional neural network to do document classification determining the typeof the document. The script trains the VGG16 model on the `Tobacco3482` dataset and ouputs the learning curves and the classification report for the model.
+This assignment shows how you can train a VGG16 convolutional neural network to do document classification, through visual characteristics rather than textual, determining the type of the document. The script trains the VGG16 model on the `Tobacco3482` dataset and ouputs the learning curves and the classification report for the model.
 
 ### Data source:
 The `Tobacco3482` dataset contains 3482 files of 10 different document types. The data can be found [here](https://www.kaggle.com/datasets/patrickaudriaz/tobacco3482jpg/data).

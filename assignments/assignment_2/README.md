@@ -1,6 +1,6 @@
 # Assignment 2:
 ### Short description:
-This assignment shows how you can use logistic regression and a neural network in order to classify different classes of images in large dataset. 
+This assignment shows how you can use logistic regression and a neural network in order to classify different classes of images in large dataset. The script preprocesses the data through greyscaling, normalizing and reshaping, and then trains and implements a logistic regression and neural network classifier (specifically a multilayer perceptron) on the data and outputs classification reports and learning curves.
 
 ### Data source:
 The data is the CIFAR-10 dataset consisting of 60000 32x32 colour images in 10 classes, with 6000 images per class. The data can be found [here](https://www.cs.toronto.edu/~kriz/cifar.html).

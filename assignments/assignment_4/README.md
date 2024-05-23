@@ -1,5 +1,4 @@
 # Assignment 4:
-
 ### Short description:
 This project shows how you can use the pretrained CNN model FaceNet to detect human faces in image data. The script lists the number of faces detected in each image of three different Swiss newspapers across 23 decades and saves the data to a .csv file, that also displays the percentage of images containing faces for each decade and for each newspaper. The script plots the percentage of faces in each newspaper across the decades. Furthermore the project contains a notebook that tests the model on a single image, and displays where the model detects a face, showcasing the accuracy of the model. 
 

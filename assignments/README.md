@@ -28,11 +28,7 @@ The repository contains:
 4. In order to see the results of the script, showing the 5 most similar images to the reference image, open the `distance.csv` file in the `out` folder.
 
 ### Discussion/summary:
-The reference image is shown below, and the most and second most similar image are displayed below that, showing how the colour histogram image search algorithm in the first case finds a different flower, but with the same colour, and in the second case finds a flower only partially similarly coloured. It is therefore safe to say, that the efficiency of a colour histogram search algorithm is very limited. 
-
-<img src="refs/image_0001.jpg" width="500">
-<img src="refs/image_0928.jpg" width="500">
-<img src="refs/image_0876.jpg" width="500">
+The reference image `image_0001.jpg` and the most similar image `image_0928.jpg` and second most similar image `image_0876.jpg` are stored in the `refs` folder that, showing how the colour histogram image search algorithm in the first case finds a different flower, but with the same colour, and in the second case finds a flower only partially similarly coloured. It is therefore safe to say, that the efficiency of a colour histogram search algorithm is very limited. 
 
 The CNN search algorithm however is much more precise. The first 80 images contain the first of 17 categories of flowers, and the CNN has placed all of the 5 most similar images within the first 80 images, meaning that they are all correctly identified.
 
@@ -104,8 +100,6 @@ The `Tobacco3482` dataset contains 3482 files of 10 different document types. Th
 The classification report shows a generally high precision with a weighted average f1-score of 0.71, but the variance of precision between classes is quite high, the highest being 0.93 and the lowest being 0.45.
 The learning curves shows the loss curve decreases over epochs while the accuracy curve increases, indicating that the model is effectively improving. However, the validation loss and accuracy does not perform as well, indicating that the model is overfitting, since it perfoms well on the training data, but not on the unseen validation data.
 
-![Reference Image](out/learning_curves.png)
-
 ### Limitations and improvement
 - The classification report shows a high performance on the classes with larger support, such as `Email` and `Letter`, and a lower performance on classes with less support, such as `Report` and `Note`, indicating that the model needs more data for these classes in order to perform better.
 - The model seems to be overfitting, and could be improved by adjusting the model, for example by addig dropout regularization. 
@@ -139,8 +133,6 @@ The dataset consists of a corpus of historic Swiss newspaper articles: : the Jou
 
 ### Discussion/summary:
 The results of the project show that the amount of faces in newspaper articles increase over time. There are difficulties with the script, because some of the images seems to be too big to be opened, but this is only the case with 6 out of 4624 images, so their absence from the final result is not crucial. 
-
-<img src="out/model_test.png" width="425">
 
 The `model_test.png` image saved to the `out` folder, shows how the model only detects one face on an image that contains at least 6 faces easily detected by the human eye, which undermines the accuracy of the model, creating uncertainty as to the realiabilty of the final results. In the light of this, it is woth to consider, that the amount of faces in newspapers might not increase through the decades, but instead it is the simply the case that the faces in the newspaper articles become more easily recognizable for the model?
 

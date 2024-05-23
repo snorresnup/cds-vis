@@ -1,6 +1,6 @@
 # Assignment 1:
 ### Short description:
-This assignment shows how you can make two different image search algorithms, one using colour histograms and one using a convlutional neural network. By generating colour histograms for each image in a database of different images of flowers, normalizing the histograms to a value between 0 and 1, and then calculating the average distance between colour channels, it finds the 5 images with lowest distance to a reference image. The other algorithm find the 5 most similar images by using a VG166 pretrained convolutional neural network and using K-Nearest Neighbours.
+This assignment shows how you can make two different image search algorithms, one using colour histograms and one using a convolutional neural network. By generating colour histograms for each image in a database of different images of flowers, normalizing the histograms to a value between 0 and 1, and then calculating the average distance between colour channels, it finds the 5 images with lowest distance to a reference image. The other algorithm find the 5 most similar images by using a VG166 pretrained convolutional neural network and using K-Nearest Neighbours.
 
 ### Data source:
 The dataset consists of 17 categories of flowers each with 80 images and a total of 1360. The data can be found [here](https://www.robots.ox.ac.uk/~vgg/data/flowers/17/).
