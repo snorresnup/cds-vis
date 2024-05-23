@@ -1,6 +1,6 @@
 # Assignment 1:
 ### Short description:
-This assignment shows how you can make two different image search algorithms, one using colour histograms and one using a convlutional neural network. By generating colour histograms for each image in a database of different images of flowers, normalizing the histograms to a value between 0 and 1, and then calculating the average distance between colour channels, it finds the 5 images with lowest distance to a reference image. The other algorithm find the 5 most similar images by using a VG166 pretrained convolutional neural network and using K-Nearest Neighbours.
+This assignment shows how you can make two different image search algorithms, one using colour histograms and one using a convolutional neural network. By generating colour histograms for each image in a database of different images of flowers, normalizing the histograms to a value between 0 and 1, and then calculating the average distance between colour channels, it finds the 5 images with lowest distance to a reference image. The other algorithm find the 5 most similar images by using a VG166 pretrained convolutional neural network and using K-Nearest Neighbours.
 
 ### Data source:
 The dataset consists of 17 categories of flowers each with 80 images and a total of 1360. The data can be found [here](https://www.robots.ox.ac.uk/~vgg/data/flowers/17/).
@@ -44,7 +44,7 @@ The CNN search algorithm however is much more precise. The first 80 images conta
 
 # Assignment 2:
 ### Short description:
-This assignment shows how you can use logistic regression and a neural network in order to classify different classes of images in large dataset. 
+This assignment shows how you can use logistic regression and a neural network in order to classify different classes of images in large dataset. The script preprocesses the data through greyscaling, normalizing and reshaping, and then trains and implements a logistic regression and neural network classifier (specifically a multilayer perceptron) on the data and outputs classification reports and learning curves.
 
 ### Data source:
 The data is the CIFAR-10 dataset consisting of 60000 32x32 colour images in 10 classes, with 6000 images per class. The data can be found [here](https://www.cs.toronto.edu/~kriz/cifar.html).
@@ -76,7 +76,7 @@ The classification report for each classifier shows a higher performance for the
 
 # Assignment 3:
 ### Short description:
-This assignment shows how you can train a VGG16 convolutional neural network to do document classification determining the typeof the document. The script trains the VGG16 model on the `Tobacco3482` dataset and ouputs the learning curves and the classification report for the model.
+This assignment shows how you can train a VGG16 convolutional neural network to do document classification, through visual characteristics rather than textual, determining the type of the document. The script trains the VGG16 model on the `Tobacco3482` dataset and ouputs the learning curves and the classification report for the model.
 
 ### Data source:
 The `Tobacco3482` dataset contains 3482 files of 10 different document types. The data can be found [here](https://www.kaggle.com/datasets/patrickaudriaz/tobacco3482jpg/data).
